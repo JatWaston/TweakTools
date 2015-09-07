@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		828E88101B9D5E4F00E60509 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828E880F1B9D5E4F00E60509 /* Foundation.framework */; };
+		828E881B1B9D5E4F00E60509 /* JWNotifyWatcher.mm in Sources */ = {isa = PBXBuildFile; fileRef = 828E881A1B9D5E4F00E60509 /* JWNotifyWatcher.mm */; };
+		828E88261B9D5E7A00E60509 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 828E88251B9D5E7A00E60509 /* libsubstrate.dylib */; };
+		828E882C1B9D606A00E60509 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828E882B1B9D606A00E60509 /* CoreFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		828E880C1B9D5E4F00E60509 /* JWNotifyWatcher.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = JWNotifyWatcher.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		828E880F1B9D5E4F00E60509 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		828E88141B9D5E4F00E60509 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		828E88151B9D5E4F00E60509 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		828E88171B9D5E4F00E60509 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		828E88181B9D5E4F00E60509 /* JWNotifyWatcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JWNotifyWatcher-Prefix.pch"; sourceTree = "<group>"; };
+		828E88191B9D5E4F00E60509 /* JWNotifyWatcher.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = JWNotifyWatcher.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		828E881A1B9D5E4F00E60509 /* JWNotifyWatcher.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = JWNotifyWatcher.mm; sourceTree = "<group>"; };
+		828E881F1B9D5E4F00E60509 /* JWNotifyWatcher.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = JWNotifyWatcher.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/JWNotifyWatcher.plist; sourceTree = "<group>"; };
+		828E88251B9D5E7A00E60509 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		828E882B1B9D606A00E60509 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		828E88081B9D5E4F00E60509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828E88101B9D5E4F00E60509 /* Foundation.framework in Frameworks */,
+				828E882C1B9D606A00E60509 /* CoreFoundation.framework in Frameworks */,
+				828E88261B9D5E7A00E60509 /* libsubstrate.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		828E88011B9D5E4F00E60509 = {
+			isa = PBXGroup;
+			children = (
+				828E88111B9D5E4F00E60509 /* JWNotifyWatcher */,
+				828E880E1B9D5E4F00E60509 /* Frameworks */,
+				828E880D1B9D5E4F00E60509 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		828E880D1B9D5E4F00E60509 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				828E880C1B9D5E4F00E60509 /* JWNotifyWatcher.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		828E880E1B9D5E4F00E60509 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				828E882B1B9D606A00E60509 /* CoreFoundation.framework */,
+				828E88251B9D5E7A00E60509 /* libsubstrate.dylib */,
+				828E880F1B9D5E4F00E60509 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		828E88111B9D5E4F00E60509 /* JWNotifyWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				828E88191B9D5E4F00E60509 /* JWNotifyWatcher.xm */,
+				828E881A1B9D5E4F00E60509 /* JWNotifyWatcher.mm */,
+				828E88121B9D5E4F00E60509 /* Package */,
+				828E88161B9D5E4F00E60509 /* Supporting Files */,
+			);
+			path = JWNotifyWatcher;
+			sourceTree = "<group>";
+		};
+		828E88121B9D5E4F00E60509 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				828E88131B9D5E4F00E60509 /* DEBIAN */,
+				828E881C1B9D5E4F00E60509 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		828E88131B9D5E4F00E60509 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				828E88141B9D5E4F00E60509 /* control.txt */,
+				828E88151B9D5E4F00E60509 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		828E88161B9D5E4F00E60509 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				828E88171B9D5E4F00E60509 /* PackageVersion.plist */,
+				828E88181B9D5E4F00E60509 /* JWNotifyWatcher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		828E881C1B9D5E4F00E60509 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				828E881D1B9D5E4F00E60509 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		828E881D1B9D5E4F00E60509 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				828E881E1B9D5E4F00E60509 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		828E881E1B9D5E4F00E60509 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				828E881F1B9D5E4F00E60509 /* JWNotifyWatcher.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		828E88091B9D5E4F00E60509 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		828E880B1B9D5E4F00E60509 /* JWNotifyWatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 828E88221B9D5E4F00E60509 /* Build configuration list for PBXNativeTarget "JWNotifyWatcher" */;
+			buildPhases = (
+				828E88061B9D5E4F00E60509 /* ShellScript */,
+				828E88071B9D5E4F00E60509 /* Sources */,
+				828E88081B9D5E4F00E60509 /* Frameworks */,
+				828E88091B9D5E4F00E60509 /* Headers */,
+				828E880A1B9D5E4F00E60509 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JWNotifyWatcher;
+			productName = JWNotifyWatcher;
+			productReference = 828E880C1B9D5E4F00E60509 /* JWNotifyWatcher.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		828E88021B9D5E4F00E60509 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					828E880B1B9D5E4F00E60509 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 828E88051B9D5E4F00E60509 /* Build configuration list for PBXProject "JWNotifyWatcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 828E88011B9D5E4F00E60509;
+			productRefGroup = 828E880D1B9D5E4F00E60509 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				828E880B1B9D5E4F00E60509 /* JWNotifyWatcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		828E88061B9D5E4F00E60509 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		828E880A1B9D5E4F00E60509 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		828E88071B9D5E4F00E60509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828E881B1B9D5E4F00E60509 /* JWNotifyWatcher.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		828E88201B9D5E4F00E60509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		828E88211B9D5E4F00E60509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		828E88231B9D5E4F00E60509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JWNotifyWatcher/JWNotifyWatcher-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		828E88241B9D5E4F00E60509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JWNotifyWatcher/JWNotifyWatcher-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		828E88051B9D5E4F00E60509 /* Build configuration list for PBXProject "JWNotifyWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				828E88201B9D5E4F00E60509 /* Debug */,
+				828E88211B9D5E4F00E60509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		828E88221B9D5E4F00E60509 /* Build configuration list for PBXNativeTarget "JWNotifyWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				828E88231B9D5E4F00E60509 /* Debug */,
+				828E88241B9D5E4F00E60509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 828E88021B9D5E4F00E60509 /* Project object */;
+}
